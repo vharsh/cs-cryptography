@@ -13,4 +13,10 @@
         - multiple instances of shift cipher, each plainText character is mapped to different cipherText character
         - key generation algo selects a different length of the shift-key each time
         - each block of the data is shifted by a block of the shift-key
-        - cryptanalysis: two stage approach, 1) determine the size of the shift-key (Kasiski's method & index of coincidence method) 2) try to determine the characters k1, k2..kt of the key k ( TODO: go over this again )
+        - cryptanalysis: two stage approach, 1) determine the size of the shift-key that is t (Kasiski's method & index of coincidence method), key-idea: run t instances of frequency analysis 2) try to determine the characters k1, k2..kt of the key k
+
+- historical ones can be broken easily in stronger attack models
+- keyspace should be sufficiently large to make brute-force infeasible
+- classical cryptography: mostly art
+- modern cryptography: formal security definition, precisely states any (unproven) assumption in constructions(e.g. unproven hardness), rigourous proof of security
+-
